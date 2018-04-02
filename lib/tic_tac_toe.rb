@@ -41,7 +41,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.chomp
+  input = gets.strip
   token = "X" || "O"
   index = input_to_index(input)
   if valid_move?(board, index)
