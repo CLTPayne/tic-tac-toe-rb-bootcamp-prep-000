@@ -52,7 +52,7 @@ def draw? (board)
 end
 
 def over? (board)
-  return true if won?(board) || full?(board) || draw?(board)
+  won?(board) || draw?(board)
 end
 
 def input_to_index (input)
